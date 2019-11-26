@@ -104,7 +104,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="I36-EQ-Khd" firstAttribute="top" secondItem="vjn-ah-aoy" secondAttribute="top" constant="44" id="2dl-VY-wb9"/>
                             <constraint firstItem="I36-EQ-Khd" firstAttribute="leading" secondItem="vjn-ah-aoy" secondAttribute="leading" id="Z0F-ld-fJr"/>

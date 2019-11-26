@@ -48,8 +48,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.toTheWebView(_:)))
         cell.isUserInteractionEnabled = true
-        cell.socialImage.tag = indexPath.row
-        cell.socialImage.addGestureRecognizer(tapGestureRecognizer)
+        cell.contentView.tag = indexPath.row
+        cell.contentView.addGestureRecognizer(tapGestureRecognizer)
         
         return cell
     }
