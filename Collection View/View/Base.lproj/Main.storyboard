@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fHP-66-Ajz">
-                                <rect key="frame" x="0.0" y="88" width="375" height="203"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="649.66666666666663"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aq5-hp-onB">
                                     <size key="itemSize" width="162" height="162"/>
@@ -27,7 +27,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" reuseIdentifier="cell" id="HeZ-z1-eII" customClass="SocialCollectionViewCell" customModule="Collection_View" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="20.666666666666668" width="162" height="162"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LCr-7U-fu4">
                                             <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
@@ -69,16 +69,16 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.69566031678082196" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fHP-66-Ajz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Sm-Mh-Jym"/>
                             <constraint firstItem="fHP-66-Ajz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bs1-Lj-ZcX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fHP-66-Ajz" secondAttribute="trailing" id="uZP-tA-lIN"/>
-                            <constraint firstItem="fHP-66-Ajz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="wnI-4S-pXV"/>
+                            <constraint firstItem="fHP-66-Ajz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="wnI-4S-pXV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Social" id="vuZ-vU-khn"/>
+                    <navigationItem key="navigationItem" title="Social" largeTitleDisplayMode="never" id="vuZ-vU-khn"/>
                     <connections>
                         <outlet property="socialMediaCollectionView" destination="fHP-66-Ajz" id="qz9-gf-nsQ"/>
                     </connections>
@@ -104,7 +104,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="I36-EQ-Khd" firstAttribute="top" secondItem="vjn-ah-aoy" secondAttribute="top" constant="44" id="2dl-VY-wb9"/>
                             <constraint firstItem="I36-EQ-Khd" firstAttribute="leading" secondItem="vjn-ah-aoy" secondAttribute="leading" id="Z0F-ld-fJr"/>
@@ -129,6 +129,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Oq-HT-28y">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

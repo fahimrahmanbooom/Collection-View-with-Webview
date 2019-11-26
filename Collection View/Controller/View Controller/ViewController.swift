@@ -24,6 +24,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var socialMediaCollectionView: UICollectionView!
     
+    var webView = webTemplateViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         socialMediaCollectionView.delegate = self
@@ -54,44 +56,40 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func viewPusher() -> webTemplateViewController {
+        webView = self.storyboard?.instantiateViewController(identifier: "webTemplateViewController") as! webTemplateViewController
+        self.navigationController?.pushViewController(webView, animated: true)
+        
+        return webView
+    }
+    
     @objc func toTheWebView(_ sender: AnyObject) {
-        print("hello this is my method!!!!")
+        webView = viewPusher()
+        
         if sender.view.tag == 0 {
-            
-            let webView = self.storyboard?.instantiateViewController(identifier: "webTemplateViewController") as! webTemplateViewController
-                webView.stringValue = "youtube"
-                webView.titleValue = "Youtube"
-                self.navigationController?.pushViewController(webView, animated: true)
+            webView.stringValue = "youtube"
+            webView.titleValue = "Youtube"
         }
         if sender.view.tag == 1 {
-            let webView = self.storyboard?.instantiateViewController(identifier: "webTemplateViewController") as! webTemplateViewController
             webView.stringValue = "gmail"
             webView.titleValue = "Gmail"
-                self.navigationController?.pushViewController(webView, animated: true)
         }
         if sender.view.tag == 2 {
-            let webView = self.storyboard?.instantiateViewController(identifier: "webTemplateViewController") as! webTemplateViewController
             webView.stringValue = "linkedin"
             webView.titleValue = "Linkedin"
-            self.navigationController?.pushViewController(webView, animated: true)
         }
         if sender.view.tag == 3 {
-            let webView = self.storyboard?.instantiateViewController(identifier: "webTemplateViewController") as! webTemplateViewController
             webView.stringValue = "twitter"
             webView.titleValue = "Twitter"
-            self.navigationController?.pushViewController(webView, animated: true)
         }
         if sender.view.tag == 4 {
-            let webView = self.storyboard?.instantiateViewController(withIdentifier: "webTemplateViewController") as! webTemplateViewController
             webView.stringValue = "facebook"
             webView.titleValue = "Facebook"
-            self.navigationController?.pushViewController(webView, animated: true)
         }
    }
     
-    
     func settingSizeForCollection() {
-        let itemSize = UIScreen.main.bounds.width / 3 - 3
+        let itemSize = UIScreen.main.bounds.width / 2 - 2
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
